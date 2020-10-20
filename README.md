@@ -1,1 +1,1 @@
-# Covid-Vaccine-Tracker
+# covid-vaccine-tracker
