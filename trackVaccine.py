@@ -6,8 +6,8 @@ def getdata(url):
     return req.text
 
 data = getdata("https://covid-19tracker.milkeninstitute.org/")
-searcher = BeautifulSoup(data, 'html.parser')
-result = str(searcher.find_all("div", class_="is_h5-2 is_developer w-richtext"))
+search = BeautifulSoup(data, 'html.parser')
+result = str(search.find_all("div", class_="is_h5-2 is_developer w-richtext"))
 
 print("Developer 1 " + result[46:86])
 print("Developer 2 " + result[139:226])
